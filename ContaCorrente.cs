@@ -16,5 +16,10 @@ namespace POO
         {
             taxaMovimento = 0.1m;
         }
+
+        public override void Sacar(decimal valor)
+        {
+            this.Saldo -= valor + (this.taxaMovimento * valor);
+        }
     }
 }

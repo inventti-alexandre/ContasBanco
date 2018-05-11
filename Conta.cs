@@ -50,7 +50,7 @@ namespace POO
             this.limite = limite;
         }
 
-        public void Sacar(decimal valor)
+        public virtual void Sacar(decimal valor)
         {
             Saldo -= valor;
         }
