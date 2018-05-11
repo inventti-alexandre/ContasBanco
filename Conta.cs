@@ -21,7 +21,7 @@ namespace POO
         public int NumeroConta
         {
             get { return numeroConta; }
-            set { numeroConta = value; }
+            private set { numeroConta = value; }
         }
 
         decimal saldo;
@@ -29,7 +29,7 @@ namespace POO
         public decimal Saldo
         {
             get { return saldo; }
-            set { saldo = value; }
+            private set { saldo = value; }
         }
 
         decimal limite;
@@ -37,7 +37,7 @@ namespace POO
         public decimal Limite
         {
             get { return limite; }
-            set { limite = value; }
+            private set { limite = value; }
         }
 
         public Conta()

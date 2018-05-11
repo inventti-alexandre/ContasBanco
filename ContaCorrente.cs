@@ -19,7 +19,7 @@ namespace POO
 
         public override void Sacar(decimal valor)
         {
-            this.Saldo -= valor + (this.taxaMovimento * valor);
+            base.Sacar(valor + (this.taxaMovimento * valor));
         }
     }
 }
