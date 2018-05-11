@@ -2,7 +2,7 @@
 
 namespace POO
 {
-    class Conta
+    abstract class Conta
     {
         int agencia;
 
@@ -29,7 +29,7 @@ namespace POO
         public decimal Saldo
         {
             get { return saldo; }
-            private set { saldo = value; }
+            protected set { saldo = value; }
         }
 
         decimal limite;
@@ -55,9 +55,6 @@ namespace POO
             Saldo -= valor;
         }
 
-        public void Depositar(decimal valor)
-        {
-            Saldo += valor;
-        }
+        public abstract void Depositar(decimal valor);
     }
 }

@@ -21,12 +21,13 @@ namespace POO
 
             Console.WriteLine(
                 "Conta Corrente: {0} \n" +
-                "Conta Poupança: {1}",
+                "Conta Poupança: {1} \n",
                 cc.Saldo, cp.Saldo
             );
 
             Console.WriteLine(
                 "Relatório \n" +
+                "--------- \n" +
                 "Saldo geral: {0}",
                 relatorio.SaldoGeral
             );

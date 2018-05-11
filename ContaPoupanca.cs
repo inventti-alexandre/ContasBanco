@@ -6,7 +6,12 @@ namespace POO
     {
         public ContaPoupanca() : base(500)
         {
+            //
+        }
 
+        public override void Depositar(decimal valor)
+        {
+            base.Saldo += valor;
         }
     }
 }
