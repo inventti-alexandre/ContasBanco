@@ -1,0 +1,63 @@
+﻿using System;
+
+namespace POO
+{
+    class Conta
+    {
+        int agencia;
+
+        public int Agencia
+        {
+            get { return agencia; }
+            set
+            {
+                if (value > 0)
+                    agencia = value;
+            }
+        }
+
+        int numeroConta;
+
+        public int NumeroConta
+        {
+            get { return numeroConta; }
+            set { numeroConta = value; }
+        }
+
+        decimal saldo;
+
+        public decimal Saldo
+        {
+            get { return saldo; }
+            set { saldo = value; }
+        }
+
+        decimal limite;
+
+        public decimal Limite
+        {
+            get { return limite; }
+            set { limite = value; }
+        }
+
+        public Conta()
+        {
+            this.limite = 1000;
+        }
+
+        public Conta(decimal limite)
+        {
+            this.limite = limite;
+        }
+
+        public void Sacar(decimal valor)
+        {
+            Saldo -= valor;
+        }
+
+        public void Depositar(decimal valor)
+        {
+            Saldo += valor;
+        }
+    }
+}
